@@ -1,5 +1,5 @@
 ---
-title: Weekly Review Automation
+title: Weekly Review Automation (GitHub Actions)
 tags:
   - ai
   - automation
@@ -9,10 +9,13 @@ created: 2026-06-17
 updated: 2026-06-17
 status: active
 type: procedure
-summary: 週次で未決事項を GitHub Issue にまとめる Automation の設定と運用
+summary: GitHub Actions で週次未決事項を Issue にまとめる代替案（Cursor Automations とは別）
 ---
 
-# Weekly Review Automation
+# Weekly Review Automation (GitHub Actions)
+
+> **想定している運用は [cursor-automations-weekly-review.md](cursor-automations-weekly-review.md)（Cursor Automations）です。**  
+> 本ドキュメントは、リポジトリ内スクリプトで機械的に Issue を作る **代替案** です。PR #3 が未マージなら採用しなくて構いません。
 
 試用フェーズで「未決・議論余地のある事項」を週1回確認するための GitHub Actions 設定です。運用方針に限らず、ナレッジベース全体の論点を対象にします。
 

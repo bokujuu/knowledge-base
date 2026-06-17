@@ -28,4 +28,5 @@ Recommended topics:
 
 - [cursor-integration.md](cursor-integration.md) — Cursor からの参照方法
 - [bokujuu-cursorsetup-integration.md](bokujuu-cursorsetup-integration.md) — グローバル設定 repo との関係
-- [weekly-review-automation.md](weekly-review-automation.md) — 週次未決事項レビュー（GitHub Actions）
+- [cursor-automations-weekly-review.md](cursor-automations-weekly-review.md) — **週次未決事項レビュー（Cursor Automations・推奨）**
+- [weekly-review-automation.md](weekly-review-automation.md) — 週次レビュー（GitHub Actions・代替案）
