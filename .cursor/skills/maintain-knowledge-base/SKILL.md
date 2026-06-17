@@ -16,6 +16,7 @@ description: >-
 1. [docs/technology/github/knowledge-base-repo-setup.md](../../docs/technology/github/knowledge-base-repo-setup.md) — 構成・命名・タグ・メタデータ
 2. [AGENTS.md](../../AGENTS.md) — エージェント向けルール
 3. [docs/_index.md](../../docs/_index.md) — トップ索引
+4. [週次レビュー Automation](../../.cursor/automations/weekly-review/INSTRUCTIONS.md) — 未決事項の PR 報告（試用フェーズ）
 
 ## ノート作成
 

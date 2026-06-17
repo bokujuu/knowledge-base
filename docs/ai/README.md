@@ -26,5 +26,8 @@ Recommended topics:
 
 ## Key Notes
 
+- [automations/README.md](automations/README.md) — **Cursor Automations 索引**
+- [automations/weekly-review-setup.md](automations/weekly-review-setup.md) — 週次レビュー（PR 報告）の設定
+- [reviews/README.md](reviews/README.md) — 週次レビュー報告一覧
 - [cursor-integration.md](cursor-integration.md) — Cursor からの参照方法
 - [bokujuu-cursorsetup-integration.md](bokujuu-cursorsetup-integration.md) — グローバル設定 repo との関係

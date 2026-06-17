@@ -13,6 +13,9 @@ The repository should be maintained carefully because it is intended for long-te
 | リポジトリ構成・運用仕様 | [docs/technology/github/knowledge-base-repo-setup.md](docs/technology/github/knowledge-base-repo-setup.md) |
 | ノート索引 | [docs/_index.md](docs/_index.md) |
 | メンテナンス手順 | [.cursor/skills/maintain-knowledge-base/SKILL.md](.cursor/skills/maintain-knowledge-base/SKILL.md) |
+| 週次レビュー Automation | [.cursor/automations/weekly-review/INSTRUCTIONS.md](.cursor/automations/weekly-review/INSTRUCTIONS.md) |
+| 週次レビュー報告一覧 | [docs/ai/reviews/README.md](docs/ai/reviews/README.md) |
+| Automation 登録簿 | [.codex/automation-registry.json](.codex/automation-registry.json) |
 | Cursor グローバル設定 | [bokujuu_cursorsetup](https://github.com/bokujuu/bokujuu_cursorsetup)（別 repo） |
 
 ## General Rules for AI Agents
