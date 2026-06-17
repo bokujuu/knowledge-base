@@ -18,7 +18,9 @@ Cursor Automation（weekly-review）が作成する週次レビュー報告の�
 
 ## Reports
 
-（Automation が週次で追記）
+| 日付 | 報告 |
+|------|------|
+| 2026-06-17 | [2026-06-17-weekly-review.md](2026-06-17-weekly-review.md) — 試用フェーズ初回 |
 
 ## Related
 
