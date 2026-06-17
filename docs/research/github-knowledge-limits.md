@@ -52,6 +52,7 @@ summary: コード用 GitHub リポジトリと知識リポジトリを分離す
 
 - [cursor-integration.md](../ai/cursor-integration.md)
 - [weekly-review-setup.md](../ai/automations/weekly-review-setup.md)
+- [Weekly review reports](../ai/reviews/README.md) — 未決事項の週次報告
 - [bokujuu-cursorsetup-integration.md](../ai/bokujuu-cursorsetup-integration.md)
 - [knowledge-base-repo-setup.md](../technology/github/knowledge-base-repo-setup.md)
 
