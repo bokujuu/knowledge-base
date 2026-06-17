@@ -1,0 +1,28 @@
+# Normalize text files
+* text=auto
+
+# Markdown and text
+*.md text eol=lf
+*.txt text eol=lf
+*.csv text eol=lf
+*.json text eol=lf
+*.jsonl text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
+*.toml text eol=lf
+*.ps1 text eol=lf
+*.py text eol=lf
+*.ahk text eol=lf
+
+# Binary files
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.gif binary
+*.pdf binary
+*.xlsx binary
+*.xlsm binary
+*.parquet binary
+*.sqlite binary
+*.db binary

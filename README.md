@@ -1,48 +1,97 @@
 # knowledge-base
 
-Personal knowledge base and reference repository.
+Personal knowledge base containing notes, references, documentation, and research.
 
-個人用の知識ベース兼リファレンス集です。仕事・趣味・技術情報・調査メモ・AI関連など、コードリポジトリに載せにくい知識をバージョン管理します。
+## Purpose
 
-## なぜ別リポジトリか
+This repository is a long-term personal knowledge base for storing information that may be useful in the future.
 
-GitHub のコードリポジトリだけでは、次のような知識の扱いが難しくなります。
+It is designed to collect and organize knowledge across both professional and personal domains using durable, portable, and searchable formats.
 
-| 課題 | このリポジトリでの対応 |
-|------|------------------------|
-| プロジェクト README に雑多なメモが増える | カテゴリ別フォルダで整理 |
-| Issue / Wiki は検索・再利用しづらい | Markdown + Git で履歴管理 |
-| 複数プロジェクト横断の知識が散在する | 1 か所に集約し `@Folders` で参照 |
-| AI エージェント向けコンテキストが混ざる | コードと分離し、必要なときだけ参照 |
+## Main Use Cases
 
-## ディレクトリ構成
+- Technical notes
+- Work procedures
+- Operational rules
+- Research notes
+- Hobby-related information
+- AI and automation experiments
+- Troubleshooting records
+- Reusable references
+- Structured datasets
+
+## Design Principles
+
+- Plain text first
+- Markdown as the primary format
+- Git-based version control
+- Human-readable and machine-readable
+- Searchable over overly decorative
+- Connected knowledge over isolated notes
+- Long-term portability
+- Obsidian-compatible but not Obsidian-dependent
+- AI-agent-readable but not AI-agent-dependent
+
+## Repository Structure
 
 ```text
-knowledge-base/
-├── docs/          # 手順書・ガイド・長期ドキュメント
-├── notes/         # 短いメモ・気づき・作業ログ
-├── references/    # 外部資料の要約・リンク集・スニペット
-├── research/      # 調査結果・比較検討・意思決定の記録
-└── experiments/   # 検証結果・試行錯誤の記録
+docs/          Markdown notes and documentation
+data/          Structured data such as CSV, JSON, JSONL, SQLite, and Parquet
+attachments/   Images, PDFs, and other supporting files
+scripts/       Utility scripts and automation tools
+archive/       Deprecated or historical materials
 ```
 
-各フォルダの詳細は、フォルダ内の `README.md` を参照してください。
+詳細な索引は [docs/_index.md](docs/_index.md) を参照してください。
 
-## Cursor での使い方
+## Metadata
 
-1. **ワークスペースとして開く** — 知識の追加・整理はこのリポジトリ単体で行う
-2. **他プロジェクトから参照する** — チャットで `@Folders` / `@Files` で必要な範囲だけ指定
-3. **エージェント向けルール** — このリポジトリ内での作業は [AGENTS.md](AGENTS.md) に従う
+Markdown notes should use YAML front matter where appropriate.
 
-詳細: [docs/cursor-integration.md](docs/cursor-integration.md)
+Example:
 
-## 運用方針
+```yaml
+---
+title: Example Note
+tags:
+  - example
+  - reference
+created: 2026-06-17
+updated: 2026-06-17
+status: active
+type: note
+---
+```
 
-- **Description は気取らない** — 用途が増えても README の説明を大きく変えなくてよい構成にする
-- **1 ファイル = 1 トピック** — 検索と `@` 参照をしやすくする
-- **日付をファイル名または見出しに含める** — 調査・検証系は `YYYY-MM-DD-トピック.md` を推奨
-- **コードは載せない** — 実装は各プロジェクトリポジトリへ。ここには知識・判断・参照のみ
+## Tagging Policy
 
-## 更新履歴
+Tags should be used to connect knowledge across folder boundaries.
 
-- 2026/06/17 10:16: 初期セットアップ（ディレクトリ構成・Cursor 連携ドキュメント）
+Examples:
+
+- `excel`
+- `powerquery`
+- `powershell`
+- `python`
+- `ahk`
+- `d365`
+- `crm`
+- `ai`
+- `llm`
+- `automation`
+- `research`
+- `procedure`
+- `troubleshooting`
+
+## AI Usage
+
+This repository may be used by AI agents for search, summarization, note creation, refactoring, and maintenance.
+
+AI agents should retrieve only relevant files instead of attempting to load the entire repository into context.
+
+See `AGENTS.md` for detailed instructions.
+
+## Related Repositories
+
+- [bokujuu_cursorsetup](https://github.com/bokujuu/bokujuu_cursorsetup) — Cursor / Codex のグローバル設定（User Rules・Skills）
+- セットアップ仕様（SoT）: [docs/technology/github/knowledge-base-repo-setup.md](docs/technology/github/knowledge-base-repo-setup.md)

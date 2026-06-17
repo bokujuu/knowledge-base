@@ -1,20 +1,40 @@
-# OS
+# OS files
 .DS_Store
 Thumbs.db
 desktop.ini
 
-# Editor
+# Temporary files
+*.tmp
+*.temp
+*.bak
 *.swp
 *.swo
-*~
 
-# Local / temporary
-temp/
-*.tmp
-*.bak
+# Editor files
+.vscode/settings.json
+.idea/
 
-# Secrets
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Node
+node_modules/
+
+# Obsidian workspace state
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+
+# Obsidian trash
+.trash/
+
+# Logs
+*.log
+
+# Local secrets
 .env
 .env.*
-*.pem
-*.key
+*.secret
+secrets/

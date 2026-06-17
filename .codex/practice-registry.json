@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "skills": [
+    {
+      "slug": "maintain-knowledge-base",
+      "path": ".cursor/skills/maintain-knowledge-base",
+      "status": "approved",
+      "description": "ノート作成・front matter 正規化・索引更新・アーカイブ",
+      "triggers": [
+        "ノートを追加",
+        "索引を更新",
+        "アーカイブ",
+        "front matter",
+        "タグ整理",
+        "重複ノート"
+      ],
+      "verification_commands": []
+    }
+  ]
+}

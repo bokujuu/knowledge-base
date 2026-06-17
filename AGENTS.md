@@ -1,34 +1,236 @@
 # AGENTS.md
 
-## 目的
+## Role of This Repository
 
-`knowledge-base` はコードを置くリポジトリではありません。ノート・参考資料・ドキュメント・調査・検証結果を蓄積し、人間と AI エージェントが後から参照するための知識リポジトリです。
+This repository is a personal knowledge base. It contains notes, references, documentation, research, scripts, structured data, and supporting attachments.
 
-## 配置ルール
+The repository should be maintained carefully because it is intended for long-term use.
 
-| 種類 | 置き場所 | 例 |
-|------|----------|-----|
-| 手順・ガイド・設計メモ | `docs/` | `docs/cursor-integration.md` |
-| 短いメモ・気づき | `notes/` | `notes/2026-06-17-メモ.md` |
-| 外部資料の要約・リンク | `references/` | `references/cursor-rules-links.md` |
-| 調査・比較・意思決定 | `research/` | `research/2026-06-17-github-limits.md` |
-| 検証・試行の記録 | `experiments/` | `experiments/2026-06-17-foo-test.md` |
+## Source of Truth
 
-迷ったら `notes/` に置き、育ってきたら適切なフォルダへ移動してください。
+| 項目 | 場所 |
+|------|------|
+| リポジトリ構成・運用仕様 | [docs/technology/github/knowledge-base-repo-setup.md](docs/technology/github/knowledge-base-repo-setup.md) |
+| ノート索引 | [docs/_index.md](docs/_index.md) |
+| メンテナンス手順 | [.cursor/skills/maintain-knowledge-base/SKILL.md](.cursor/skills/maintain-knowledge-base/SKILL.md) |
+| Cursor グローバル設定 | [bokujuu_cursorsetup](https://github.com/bokujuu/bokujuu_cursorsetup)（別 repo） |
 
-## 編集時の注意
+## General Rules for AI Agents
 
-- 既存ファイルのトーン・見出しレベルに合わせる
-- 日本語 Markdown を基本とする（英語タイトル併記は可）
-- 秘密情報・個人を特定できる情報はコミットしない
-- 大きなバイナリは置かない（必要ならリンクのみ）
+When editing this repository:
 
-## 禁止
+1. Prefer small, explicit changes.
+2. Do not delete existing content unless explicitly instructed.
+3. Do not overwrite notes without preserving important information.
+4. Use Markdown for knowledge notes.
+5. Use YAML front matter for metadata when useful.
+6. Keep file names stable after creation unless renaming is clearly necessary.
+7. Preserve user-written wording when possible.
+8. If information appears outdated, mark it as outdated instead of deleting it.
+9. When creating new files, place them in the most appropriate directory.
+10. If uncertain where to place a note, place it under `docs/research/` or create a clearly named subfolder.
 
-- アプリケーションコードの追加（スクリプト・ライブラリの実装）
-- 他リポジトリのコード丸ごとの複製
-- 無関係な大規模リファクタやフォルダ構成の変更（明示指示がある場合を除く）
+## Preferred File Types
 
-## 検証
+Use:
 
-Markdown の追加・更新のみの変更では、リンク切れがないか目視確認すれば十分です。
+- `.md` for notes and documentation
+- `.csv` for simple tabular data
+- `.json` for structured objects
+- `.jsonl` for line-based structured records
+- `.parquet` for larger analytical datasets
+- `.sqlite` for relational local databases
+- `.ps1` for PowerShell scripts
+- `.py` for Python scripts
+- `.ahk` for AutoHotKey scripts
+
+Avoid storing proprietary or binary formats unless they are necessary as source materials.
+
+## Markdown Front Matter
+
+Use this format for standard notes:
+
+```yaml
+---
+title: 
+tags: []
+created: YYYY-MM-DD
+updated: YYYY-MM-DD
+status: active
+type: note
+---
+```
+
+Recommended `status` values:
+
+- `active`
+- `draft`
+- `review`
+- `outdated`
+- `archived`
+
+Recommended `type` values:
+
+- `note`
+- `reference`
+- `procedure`
+- `research`
+- `troubleshooting`
+- `glossary`
+- `dataset`
+- `script`
+- `index`
+
+## Writing Style
+
+Write notes clearly and directly.
+
+Prefer:
+
+- Short headings
+- Concrete examples
+- Bullet lists where useful
+- Code blocks for commands or scripts
+- Tables for comparisons
+- Links to related notes
+
+Avoid:
+
+- Vague titles
+- Excessive nesting
+- Duplicate notes
+- Unexplained abbreviations
+- Tool-specific syntax that reduces portability
+
+## Tagging Rules
+
+Use lowercase tags.
+
+Prefer simple tags:
+
+```text
+excel
+powerquery
+python
+powershell
+ahk
+d365
+crm
+ai
+llm
+automation
+github
+obsidian
+research
+procedure
+troubleshooting
+reference
+```
+
+Do not create many near-duplicate tags.
+
+Avoid:
+
+```text
+PowerQuery
+power-query
+power_query
+pq
+```
+
+Prefer one canonical tag:
+
+```text
+powerquery
+```
+
+## Linking Rules
+
+Use Markdown links or Obsidian-style wikilinks where useful.
+
+Acceptable:
+
+```markdown
+[Power Query](../technology/powerquery.md)
+```
+
+Acceptable for Obsidian use:
+
+```markdown
+[[Power Query]]
+```
+
+If using wikilinks, keep file names readable and stable.
+
+## Directory Rules
+
+Use `docs/work/` for work-related knowledge.
+
+Use `docs/technology/` for technical notes.
+
+Use `docs/ai/` for AI, LLM, agent, prompt, and automation notes.
+
+Use `docs/personal/` for personal notes and hobby-related information.
+
+Use `docs/research/` for investigation notes and unfinished research.
+
+Use `docs/glossary/` for definitions of terms.
+
+Use `data/` for structured data.
+
+Use `attachments/` for images, PDFs, and other supporting files.
+
+Use `scripts/` for reusable scripts.
+
+Use `archive/` for obsolete or historical content.
+
+## Maintenance Tasks
+
+When asked to maintain the repository, AI agents may:
+
+- Create index files
+- Normalize front matter
+- Add missing tags
+- Detect duplicate notes
+- Move outdated files to `archive/`
+- Summarize long notes
+- Split overly long notes
+- Create glossary entries
+- Generate README files for folders
+- Convert notes into structured datasets where appropriate
+
+Follow [.cursor/skills/maintain-knowledge-base/SKILL.md](.cursor/skills/maintain-knowledge-base/SKILL.md) for standard maintenance workflows.
+
+## Borrowed Skills (bokujuu_cursorsetup)
+
+グローバル skill は `bokujuu_cursorsetup` を install した環境で利用可能。本 repo のメンテナンスで特に有用なもの:
+
+| skill | 用途 |
+|-------|------|
+| `japanese-technical-writing` | 日本語ノートの作成・改稿 |
+| `japanese-doc-review` | 日本語文書のレビュー |
+| `cursor-session-doc` | 過去 Cursor セッションの要約・引き継ぎ |
+| `repo-agent-bootstrap` | AGENTS.md / skill 基盤のメンテナンス |
+| `agent-handoff-recovery` | セッション折り返し時の状況整理 |
+
+## Safety and Privacy
+
+Treat this repository as private.
+
+Do not add secrets, passwords, API keys, tokens, personal identification numbers, or confidential third-party information unless explicitly instructed.
+
+If a secret is detected, warn the user and recommend removing it from Git history if it has been committed.
+
+## Commit Style
+
+Use clear commit messages.
+
+Examples:
+
+```text
+Add initial knowledge-base structure
+Add Markdown note templates
+Update tagging policy
+Add Power Query reference notes
+Archive outdated CRM memo
+```
