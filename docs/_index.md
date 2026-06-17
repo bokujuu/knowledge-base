@@ -48,4 +48,6 @@ This index should be updated when major topic areas are added.
 
 - [Repository setup specification](technology/github/knowledge-base-repo-setup.md)
 - [Cursor integration](ai/cursor-integration.md)
+- [Cursor Automations](ai/automations/README.md)
+- [Weekly review reports](ai/reviews/README.md)
 - [bokujuu_cursorsetup integration](ai/bokujuu-cursorsetup-integration.md)

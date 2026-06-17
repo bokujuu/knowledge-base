@@ -43,12 +43,15 @@ summary: コード用 GitHub リポジトリと知識リポジトリを分離す
 
 ## Open Questions
 
+- [ ] knowledge-base の主目的はどれに近いか（長期保管庫 / 作業の外部記憶 / AI 参照セット）
+- [ ] 週次レビュー Automation + PR 報告の運用で十分か
 - [ ] 既存の散在メモがあれば、カテゴリに沿って移行
 - [ ] よく使うプロジェクトは Multi-root Workspace で knowledge-base を追加
 
 ## Related Notes
 
 - [cursor-integration.md](../ai/cursor-integration.md)
+- [weekly-review-setup.md](../ai/automations/weekly-review-setup.md)
 - [bokujuu-cursorsetup-integration.md](../ai/bokujuu-cursorsetup-integration.md)
 - [knowledge-base-repo-setup.md](../technology/github/knowledge-base-repo-setup.md)
 
