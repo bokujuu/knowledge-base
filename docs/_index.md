@@ -16,6 +16,7 @@ This is the top-level index for Markdown notes.
 
 - [Work](work/README.md)
 - [Technology](technology/README.md)
+  - [Excel / RibbonX xlam build](technology/excel/ribbonx-xlam-build.md)
 - [AI](ai/README.md)
 - [Personal](personal/README.md)
 - [Research](research/README.md)
