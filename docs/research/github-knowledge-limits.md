@@ -5,7 +5,7 @@ tags:
   - research
   - ai
 created: 2026-06-17
-updated: 2026-06-17
+updated: 2026-06-22
 status: active
 type: research
 summary: コード用 GitHub リポジトリと知識リポジトリを分離する理由と運用方針
@@ -54,6 +54,7 @@ summary: コード用 GitHub リポジトリと知識リポジトリを分離す
 - [weekly-review-setup.md](../ai/automations/weekly-review-setup.md)
 - [bokujuu-cursorsetup-integration.md](../ai/bokujuu-cursorsetup-integration.md)
 - [knowledge-base-repo-setup.md](../technology/github/knowledge-base-repo-setup.md)
+- [週次レビュー報告一覧](../ai/reviews/README.md)
 
 ## References
 
