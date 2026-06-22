@@ -15,6 +15,7 @@ type: index
 ## Topics
 
 - [RibbonX xlam build automation](ribbonx-xlam-build.md) — Python zip 注入後にリボンが出ない問題と解決
+- [path-settings xlsx for xlam builds](path-settings-xlam-config.md) — パス・メール・FileAccess のテーブル設定とビルド注入
 
 ## Related
 
