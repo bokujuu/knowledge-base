@@ -28,3 +28,4 @@ Recommended topics:
 ## Subfolders
 
 - [github/](github/) — Git / GitHub / リポジトリ設計
+- [excel/](excel/) — Excel / RibbonX / xlam ビルド
