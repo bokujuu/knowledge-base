@@ -3,7 +3,7 @@ title: Knowledge Index
 tags:
   - index
 created: 2026-06-17
-updated: 2026-06-17
+updated: 2026-06-21
 status: active
 type: index
 ---
@@ -51,3 +51,4 @@ This index should be updated when major topic areas are added.
 - [Cursor Automations](ai/automations/README.md)
 - [Weekly review reports](ai/reviews/README.md)
 - [bokujuu_cursorsetup integration](ai/bokujuu-cursorsetup-integration.md)
+- [Agent docs & verbalization research](research/agent-docs-verbalization-research.md)
