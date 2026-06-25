@@ -160,6 +160,7 @@ mizchi の「調査メモから始めよ」、ds-ai-coding-skills の「docs/age
 - [github-knowledge-limits.md](github-knowledge-limits.md)
 - [cursor-integration.md](../ai/cursor-integration.md)
 - [ryo-lu-closer-to-material-judgment.md](../ai/ryo-lu-closer-to-material-judgment.md)
+- [agent-skill-evaluation-reference.md](agent-skill-evaluation-reference.md) — スキル評価の参照（codex-skill-bench）
 
 ## References
 
