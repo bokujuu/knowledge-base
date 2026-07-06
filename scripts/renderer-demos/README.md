@@ -14,6 +14,18 @@ npm run dev
 
 ブラウザで http://localhost:5173 を開きます。
 
+### 仮想デスクトップ（VNC）向け
+
+VNC 上では system Chrome の GPU 初期化が失敗し、画面が真っ白になることがあります。その場合は次を使います。
+
+```bash
+cd scripts/renderer-demos
+bash start-desktop.sh restart
+```
+
+- 開発サーバー起動 + Playwright Chromium で比較ページを自動オープン
+- 停止: `bash start-desktop.sh stop`
+
 `npm run dev` は次を同時起動します。
 
 | ポート | 内容 |
