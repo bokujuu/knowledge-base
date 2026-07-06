@@ -6,7 +6,7 @@ tags:
   - automation
   - procedure
 created: 2026-06-17
-updated: 2026-06-17
+updated: 2026-07-06
 status: active
 type: procedure
 summary: Cursor Automations で週次レビュー（PR 報告）を設定する手順
@@ -43,7 +43,7 @@ summary: Cursor Automations で週次レビュー（PR 報告）を設定する�
 | 項目 | 値 |
 |------|-----|
 | Type | Scheduled |
-| Cron | `0 0 * * 0`（日曜 09:00 JST） |
+| Cron | `0 0 * * 1`（月曜 09:00 JST） |
 
 試用中は **Run now** で手動実行を推奨。
 
