@@ -1,0 +1,45 @@
+{
+  "name": "renderer-demos",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -n hub,mc,rv -c blue,magenta,cyan \"vite\" \"npm run dev:mc\" \"npm run dev:rv\"",
+    "dev:hub": "vite",
+    "dev:mc": "cd demos/motion-canvas && vite",
+    "dev:rv": "cd demos/revideo && vite",
+    "build": "npm run build:mc && npm run build:rv && node scripts/copy-embed-assets.mjs && vite build",
+    "build:mc": "cd demos/motion-canvas && vite build",
+    "build:rv": "cd demos/revideo && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@motion-canvas/2d": "^3.17.2",
+    "@motion-canvas/core": "^3.17.2",
+    "@motion-canvas/player": "^3.17.2",
+    "@remotion/player": "^4.0.286",
+    "@revideo/2d": "^0.10.3",
+    "@revideo/core": "^0.10.3",
+    "@revideo/player": "^0.10.4",
+    "@revideo/ui": "^0.10.3",
+    "pixi.js": "^8.9.1",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "remotion": "^4.0.286",
+    "three": "^0.175.0"
+  },
+  "devDependencies": {
+    "@motion-canvas/ui": "^3.17.2",
+    "@motion-canvas/vite-plugin": "^3.17.2",
+    "@revideo/vite-plugin": "^0.10.3",
+    "@types/p5": "^1.7.6",
+    "@types/react": "^19.1.2",
+    "@types/react-dom": "^19.1.2",
+    "@types/three": "^0.175.0",
+    "@vitejs/plugin-react": "^4.4.1",
+    "concurrently": "^9.1.2",
+    "p5": "^1.11.5",
+    "typescript": "^5.8.3",
+    "vite": "^5.4.19"
+  }
+}

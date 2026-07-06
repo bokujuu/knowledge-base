@@ -1,0 +1,9 @@
+node_modules
+dist
+public/embed/motion-canvas-dist
+public/embed/revideo-dist
+public/embed/manifest.json
+public/embed/motion-canvas-project.js
+public/embed/revideo-project.js
+public/embed/revideo-project.wasm
+.DS_Store
