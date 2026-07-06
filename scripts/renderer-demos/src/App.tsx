@@ -7,11 +7,11 @@ import {RemotionDemo} from './demos/RemotionDemo';
 import {ThreeDemo} from './demos/ThreeDemo';
 
 const motionCanvasSrc = import.meta.env.DEV
-  ? 'http://localhost:5174/'
+  ? 'http://localhost:5174/player.html'
   : '/embed/motion-canvas.html';
 
 const revideoSrc = import.meta.env.DEV
-  ? 'http://localhost:5175/'
+  ? 'http://localhost:5175/player.html'
   : '/embed/revideo.html';
 
 export default function App() {
