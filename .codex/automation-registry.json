@@ -6,7 +6,7 @@
       "instruction": ".cursor/automations/weekly-review/INSTRUCTIONS.md",
       "setup_doc": "docs/ai/automations/weekly-review-setup.md",
       "status": "trial",
-      "trigger": "schedule:0 0 * * 0",
+      "trigger": "schedule:0 0 * * 1",
       "repository": "bokujuu/knowledge-base",
       "deliverable": "pull_request",
       "report_path": "docs/ai/reviews/YYYY-MM-DD-weekly-review.md",
