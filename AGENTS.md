@@ -237,3 +237,19 @@ Update tagging policy
 Add Power Query reference notes
 Archive outdated CRM memo
 ```
+
+## Cursor Cloud specific instructions
+
+This repository is a documentation-first knowledge base, not a buildable application. There is no dependency manifest, no build step, and no automated test or lint suite.
+
+- Runtime: Python 3 from the system (`python3`, 3.12+ available). The only executable is `scripts/python/weekly_review_scan.py`, which uses the standard library only — nothing to `pip install`.
+- Run the weekly-review helper (prints a Markdown report to stdout, or writes it with `--output`):
+
+  ```bash
+  python3 scripts/python/weekly_review_scan.py
+  python3 scripts/python/weekly_review_scan.py --output docs/ai/reviews/YYYY-MM-DD-weekly-review.md --date YYYY-MM-DD
+  ```
+
+  The script resolves the repo root from its own path, so it can be run from any working directory.
+- No configured linter/tests. For a quick sanity check on the script, byte-compile it: `python3 -m py_compile scripts/python/weekly_review_scan.py`.
+- Main "workflow" here is editing Markdown notes; see the Source of Truth table above and `.cursor/skills/maintain-knowledge-base/SKILL.md` for maintenance procedures. The weekly-review Automation is described in `.cursor/automations/weekly-review/INSTRUCTIONS.md`.
