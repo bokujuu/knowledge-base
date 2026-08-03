@@ -5,8 +5,8 @@ tags:
   - research
   - ai
 created: 2026-06-17
-updated: 2026-06-22
-status: active
+updated: 2026-08-03
+status: review
 type: research
 summary: コード用 GitHub リポジトリと知識リポジトリを分離する理由と運用方針
 ---

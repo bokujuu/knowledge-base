@@ -5,7 +5,7 @@ tags:
   - review
   - index
 created: 2026-06-17
-updated: 2026-07-06
+updated: 2026-08-03
 status: active
 type: index
 summary: Cursor Automation 週次レビューの報告書一覧
@@ -22,6 +22,7 @@ Cursor Automation（weekly-review）が作成する週次レビュー報告の�
 |------|------|
 | 2026-06-22 | [2026-06-22-weekly-review.md](2026-06-22-weekly-review.md) |
 | 2026-07-06 | [2026-07-06-weekly-review.md](2026-07-06-weekly-review.md) |
+| 2026-08-03 | [2026-08-03-weekly-review.md](2026-08-03-weekly-review.md) |
 
 ## Related
 
