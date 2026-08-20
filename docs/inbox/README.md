@@ -13,4 +13,4 @@ layer: desk
 
 Notes seen once. If a second case confirms them, move to `docs/library/` and add a ledger row.
 
-Empty on purpose after the 2026-08-20 reseed.
+- [task-model-slugs.md](task-model-slugs.md) — Task `model` allow-list ≠ chat UI (2026-07-19).
