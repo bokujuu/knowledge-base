@@ -87,7 +87,7 @@ Examples:
 
 This repository may be used by AI agents for search, summarization, note creation, refactoring, and maintenance.
 
-AI agents should retrieve only relevant files instead of attempting to load the entire repository into context.
+AI agents should retrieve only relevant files instead of attempting to load the entire repository into context. Start at [docs/desk.md](docs/desk.md).
 
 See `AGENTS.md` for detailed instructions.
 

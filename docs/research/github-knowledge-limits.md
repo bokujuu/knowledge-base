@@ -5,9 +5,10 @@ tags:
   - research
   - ai
 created: 2026-06-17
-updated: 2026-06-22
+updated: 2026-08-20
 status: active
 type: research
+layer: library
 summary: コード用 GitHub リポジトリと知識リポジトリを分離する理由と運用方針
 ---
 
@@ -43,16 +44,18 @@ summary: コード用 GitHub リポジトリと知識リポジトリを分離す
 
 ## Open Questions
 
-- [ ] knowledge-base の主目的はどれに近いか（長期保管庫 / 作業の外部記憶 / AI 参照セット）
+- [x] knowledge-base の主目的はどれに近いか → **AI が再接続する外部判断層（書庫）**。長期保管と作業の外部記憶を兼ねる。常時入口は [desk.md](../desk.md)。2026-08-20 に確定。
 - [ ] 週次レビュー Automation + PR 報告の運用で十分か
 - [ ] 既存の散在メモがあれば、カテゴリに沿って移行
-- [ ] よく使うプロジェクトは Multi-root Workspace で knowledge-base を追加
+- [x] よく使うプロジェクトは Multi-root Workspace で knowledge-base を追加 → 推奨のまま（[cursor-integration.md](../ai/cursor-integration.md)）
 
 ## Related Notes
 
 - [cursor-integration.md](../ai/cursor-integration.md)
 - [weekly-review-setup.md](../ai/automations/weekly-review-setup.md)
 - [bokujuu-cursorsetup-integration.md](../ai/bokujuu-cursorsetup-integration.md)
+- [desk.md](../desk.md)
+- [external-intelligence-operating-model.md](../ai/external-intelligence-operating-model.md)
 - [knowledge-base-repo-setup.md](../technology/github/knowledge-base-repo-setup.md)
 - [週次レビュー報告一覧](../ai/reviews/README.md)
 

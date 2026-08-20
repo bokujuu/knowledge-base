@@ -4,16 +4,17 @@ tags:
   - research
   - index
 created: 2026-06-17
-updated: 2026-06-23
+updated: 2026-08-20
 status: active
 type: index
+layer: desk
 ---
 
 # Research Notes
 
 This folder contains research notes, investigation logs, unfinished inquiries, comparisons, and source-based summaries.
 
-Use this folder when the final category is not yet clear.
+Use this folder when the final category is not yet clear (`layer: inbox`).
 
 ## Notes
 

@@ -4,7 +4,8 @@ description: >-
   knowledge-base リポジトリのノート作成・front matter 正規化・索引更新・アーカイブ・
   タグ整理を行う。「ノートを追加して」「索引を更新して」「古いメモをアーカイブして」
   「front matter を揃えて」「重複ノートを整理して」等の依頼で使う。
-  bokujuu_cursorsetup の repo-agent-bootstrap / japanese-technical-writing と併用可。
+  bokujuu_cursorsetup の repo-agent-bootstrap / capture-external-intelligence /
+  japanese-technical-writing と併用可。
 ---
 
 # maintain-knowledge-base — 知識ベースのメンテナンス
@@ -13,18 +14,20 @@ description: >-
 
 ## SoT（読む順）
 
-1. [docs/technology/github/knowledge-base-repo-setup.md](../../docs/technology/github/knowledge-base-repo-setup.md) — 構成・命名・タグ・メタデータ
-2. [AGENTS.md](../../AGENTS.md) — エージェント向けルール
-3. [docs/_index.md](../../docs/_index.md) — トップ索引
-4. [週次レビュー Automation](../../.cursor/automations/weekly-review/INSTRUCTIONS.md) — 未決事項の PR 報告（試用フェーズ）
+1. [docs/desk.md](../../docs/desk.md) — 常時入口（再接続トリガー）
+2. [docs/technology/github/knowledge-base-repo-setup.md](../../docs/technology/github/knowledge-base-repo-setup.md) — 構成・命名・タグ・メタデータ
+3. [AGENTS.md](../../AGENTS.md) — エージェント向けルール
+4. [docs/_index.md](../../docs/_index.md) — トップ索引
+5. [週次レビュー Automation](../../.cursor/automations/weekly-review/INSTRUCTIONS.md) — 未決事項の PR 報告（試用フェーズ）
 
 ## ノート作成
 
 1. 適切なフォルダを選ぶ（迷ったら `docs/research/`）
-2. [docs/_templates/](../../docs/_templates/) からテンプレートをコピー
+2. [docs/_templates/](../../docs/_templates/) からテンプレートをコピー（`layer:` を付ける）
 3. ファイル名は lowercase 英語（例: `powerquery-relative-path.md`）
-4. YAML front matter を埋める（`created` / `updated` は実日付）
-5. 関連ノートへリンクを追加
+4. YAML front matter を埋める（`created` / `updated` は実日付、`layer` は desk / library / case / inbox）
+5. 机に載せる再接続が必要なら [docs/desk.md](../../docs/desk.md) に1行。昇格なら [docs/promotion-ledger.md](../../docs/promotion-ledger.md)
+6. 関連ノートへリンクを追加
 
 ## front matter 正規化
 
@@ -53,7 +56,8 @@ description: >-
 - [ ] タグは正規形か（重複タグなし）
 - [ ] 関連ノートへのリンクはあるか
 - [ ] 秘密情報・個人情報は含まれていないか
-- [ ] 索引（`_index.md` / フォルダ README）を更新したか
+- [ ] `layer` は desk / library / case / inbox か
+- [ ] 索引（`desk.md` / `_index.md` / フォルダ README）を更新したか
 
 ## 借用 skill（グローバル）
 
@@ -61,7 +65,8 @@ description: >-
 |-------|----------|
 | `japanese-technical-writing` | 日本語ノートの新規作成・改稿 |
 | `japanese-doc-review` | 日本語文書のレビュー |
-| `cursor-session-doc` | 過去セッションをノート化する前の調査 |
+| `cursor-session-doc` | 過去セッションをノート化する前の調査（`ctx` が使えるときは ctx 優先） |
+| `capture-external-intelligence` | 作業リポ側から本 repo へ判断を残す |
 | `repo-agent-bootstrap` | AGENTS.md / 本 skill の基盤メンテナンス |
 
 ## 報告テンプレート

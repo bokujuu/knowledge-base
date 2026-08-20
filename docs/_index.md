@@ -3,14 +3,21 @@ title: Knowledge Index
 tags:
   - index
 created: 2026-06-17
-updated: 2026-06-21
+updated: 2026-08-20
 status: active
 type: index
 ---
 
 # Knowledge Index
 
-This is the top-level index for Markdown notes.
+常時入口は [desk.md](desk.md)。ここは書庫の地図であり、全部を一度に読まない。
+
+## Layers
+
+- **desk** — [desk.md](desk.md), [promotion-ledger.md](promotion-ledger.md)
+- **library** — 安定した判断。Technology / AI / Work の本文
+- **inbox** — [Research](research/README.md)
+- **case** — [Weekly review reports](ai/reviews/README.md)
 
 ## Main Areas
 
@@ -52,4 +59,5 @@ This index should be updated when major topic areas are added.
 - [Cursor Automations](ai/automations/README.md)
 - [Weekly review reports](ai/reviews/README.md)
 - [bokujuu_cursorsetup integration](ai/bokujuu-cursorsetup-integration.md)
+- [External intelligence operating model](ai/external-intelligence-operating-model.md)
 - [Agent docs & verbalization research](research/agent-docs-verbalization-research.md)

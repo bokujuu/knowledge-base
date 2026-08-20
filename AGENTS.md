@@ -4,12 +4,18 @@
 
 This repository is a personal knowledge base. It contains notes, references, documentation, research, scripts, structured data, and supporting attachments.
 
+Treat it as a **library**: the next agent should reconnect to a note when needed. Do not load the whole tree into context.
+
+The always-on entry is [docs/desk.md](docs/desk.md) (small reconnect index). Global Cursor/Codex procedures live in [bokujuu_cursorsetup](https://github.com/bokujuu/bokujuu_cursorsetup).
+
 The repository should be maintained carefully because it is intended for long-term use.
 
 ## Source of Truth
 
 | 項目 | 場所 |
 |------|------|
+| 常時入口（机） | [docs/desk.md](docs/desk.md) |
+| 昇格記録 | [docs/promotion-ledger.md](docs/promotion-ledger.md) |
 | リポジトリ構成・運用仕様 | [docs/technology/github/knowledge-base-repo-setup.md](docs/technology/github/knowledge-base-repo-setup.md) |
 | ノート索引 | [docs/_index.md](docs/_index.md) |
 | メンテナンス手順 | [.cursor/skills/maintain-knowledge-base/SKILL.md](.cursor/skills/maintain-knowledge-base/SKILL.md) |
@@ -22,6 +28,7 @@ The repository should be maintained carefully because it is intended for long-te
 
 When editing this repository:
 
+0. Read [docs/desk.md](docs/desk.md) first. Follow reconnect triggers instead of dumping long notes into `AGENTS.md`.
 1. Prefer small, explicit changes.
 2. Do not delete existing content unless explicitly instructed.
 3. Do not overwrite notes without preserving important information.
@@ -83,6 +90,13 @@ Recommended `type` values:
 - `dataset`
 - `script`
 - `index`
+
+Recommended `layer` values (desk / library split):
+
+- `desk` — reconnect trigger only (keep short)
+- `library` — changes future agent judgment
+- `case` — reconnect to a past engagement
+- `inbox` — observed once; default for `docs/research/`
 
 ## Writing Style
 
@@ -213,6 +227,7 @@ Follow [.cursor/skills/maintain-knowledge-base/SKILL.md](.cursor/skills/maintain
 | `japanese-technical-writing` | 日本語ノートの作成・改稿 |
 | `japanese-doc-review` | 日本語文書のレビュー |
 | `cursor-session-doc` | 過去 Cursor セッションの要約・引き継ぎ |
+| `capture-external-intelligence` | 作業中リポから書庫へ判断を残す（グローバル） |
 | `repo-agent-bootstrap` | AGENTS.md / skill 基盤のメンテナンス |
 | `agent-handoff-recovery` | セッション折り返し時の状況整理 |
 

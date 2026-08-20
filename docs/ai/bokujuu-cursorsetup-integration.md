@@ -6,9 +6,10 @@ tags:
   - github
   - reference
 created: 2026-06-17
-updated: 2026-06-17
+updated: 2026-08-20
 status: active
 type: reference
+layer: library
 summary: knowledge-base と bokujuu_cursorsetup の役割分担
 ---
 
@@ -18,8 +19,8 @@ summary: knowledge-base と bokujuu_cursorsetup の役割分担
 
 | リポジトリ | 役割 |
 |------------|------|
-| [bokujuu_cursorsetup](https://github.com/bokujuu/bokujuu_cursorsetup) | Cursor / Codex の**グローバル設定**（User Rules 原本・Skills・Hooks 雛形） |
-| `knowledge-base`（本 repo） | **知識本文**（ノート・調査・手順・参考資料） |
+| [bokujuu_cursorsetup](https://github.com/bokujuu/bokujuu_cursorsetup) | Cursor / Codex の**グローバル設定**（User Rules 原本・Skills・Hooks 雛形）。常時入口は短く保つ |
+| `knowledge-base`（本 repo） | **書庫**（判断・失敗・調査・再開材料）。入口は [desk.md](../desk.md) |
 
 設定と知識を分離することで、どちらも長期運用しやすくする。
 
@@ -48,7 +49,8 @@ summary: knowledge-base と bokujuu_cursorsetup の役割分担
 | `cursor-session-doc` | 過去 Cursor セッションの要約 |
 | `repo-agent-bootstrap` | AGENTS.md / skill 基盤の整備 |
 | `agent-handoff-recovery` | セッション折り返し時の状況整理 |
-| `retrospective-codify` | タスク完了後の知見のルール化 |
+| `capture-external-intelligence` | 作業セッションから本 repo へ判断を残す |
+| `retrospective-codify` | **退役**。cursorsetup の legacy 削除リスト。後任は `capture-external-intelligence` |
 
 詳細なタスク別参照は [bokujuu_cursorsetup の rule-index](https://github.com/bokujuu/bokujuu_cursorsetup/blob/main/docs/rule-index.md) を参照。
 
@@ -63,4 +65,6 @@ cd bokujuu_cursorsetup
 ## Related Notes
 
 - [cursor-integration.md](cursor-integration.md)
+- [desk.md](../desk.md)
+- [external-intelligence-operating-model.md](external-intelligence-operating-model.md)
 - [knowledge-base-repo-setup.md](../technology/github/knowledge-base-repo-setup.md)
