@@ -1,55 +1,29 @@
 ---
-title: Knowledge Index
+title: Knowledge index
 tags:
   - index
-created: 2026-06-17
-updated: 2026-06-21
+created: 2026-08-20
+updated: 2026-08-20
 status: active
 type: index
+layer: desk
 ---
 
-# Knowledge Index
+# Index
 
-This is the top-level index for Markdown notes.
+Start at [desk.md](desk.md).
 
-## Main Areas
+## library
 
-- [Work](work/README.md)
-- [Technology](technology/README.md)
-  - [Excel / RibbonX xlam build](technology/excel/ribbonx-xlam-build.md)
-- [AI](ai/README.md)
-- [Personal](personal/README.md)
-- [Research](research/README.md)
-- [Glossary](glossary/README.md)
+- [why-github.md](library/why-github.md)
+- [placement.md](library/placement.md)
+- [excel-com-ribbon.md](library/excel-com-ribbon.md)
+- [excel-existing-workbook.md](library/excel-existing-workbook.md)
+- [power-query.md](library/power-query.md)
+- [agent-layers.md](library/agent-layers.md)
+- [hang-prevention.md](library/hang-prevention.md)
+- [ctx-recall.md](library/ctx-recall.md)
 
-## Common Tags
+## inbox
 
-- `excel`
-- `powerquery`
-- `powershell`
-- `python`
-- `ahk`
-- `d365`
-- `crm`
-- `ai`
-- `llm`
-- `automation`
-- `github`
-- `obsidian`
-- `research`
-- `procedure`
-- `troubleshooting`
-- `reference`
-
-## Maintenance Notes
-
-This index should be updated when major topic areas are added.
-
-## Related
-
-- [Repository setup specification](technology/github/knowledge-base-repo-setup.md)
-- [Cursor integration](ai/cursor-integration.md)
-- [Cursor Automations](ai/automations/README.md)
-- [Weekly review reports](ai/reviews/README.md)
-- [bokujuu_cursorsetup integration](ai/bokujuu-cursorsetup-integration.md)
-- [Agent docs & verbalization research](research/agent-docs-verbalization-research.md)
+- [inbox/README.md](inbox/README.md)

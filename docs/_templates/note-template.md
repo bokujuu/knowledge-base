@@ -5,6 +5,7 @@ created: YYYY-MM-DD
 updated: YYYY-MM-DD
 status: draft
 type: note
+layer: inbox
 ---
 
 # Title
