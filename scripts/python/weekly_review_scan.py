@@ -20,7 +20,8 @@ SKIP_DIR_PARTS = {
 }
 
 SKIP_FILES = {
-    "docs/technology/github/knowledge-base-repo-setup.md",
+    "docs/desk.md",
+    "docs/_index.md",
 }
 
 OPEN_SECTION_HEADINGS = {

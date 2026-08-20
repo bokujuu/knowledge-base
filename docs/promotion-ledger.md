@@ -1,24 +1,19 @@
 ---
-title: Promotion Ledger
+title: Promotion ledger
 tags:
-  - ai
   - index
-  - github
 created: 2026-08-20
 updated: 2026-08-20
 status: active
 type: index
 layer: desk
-summary: inbox → library → cursorsetup skill の昇格記録
 ---
 
-# Promotion Ledger
+# Promotion ledger
 
-再現性が出た判断だけを上へ上げる。1回の成功では skill にしない。
-
-| 日付 | 発見 | 層の変化 | 行先 |
-|------|------|----------|------|
-| 2026-07-03 | RibbonX xlam は inject 後に Excel COM で正規化する | inbox → library（ノート） / skill は未マージ | [ribbonx-xlam-build.md](technology/excel/ribbonx-xlam-build.md)、cursorsetup PR #23 は参照のみ |
-| 2026-08-20 | 常時プロンプトを長くせず、GitHub 書庫へ再接続する | 運用モデルを library 化 | [external-intelligence-operating-model.md](ai/external-intelligence-operating-model.md) |
-
-新しい行は新しい行だけ足す。本文の長い経緯は書庫ノートへ。
+| Date | Judgment | Move | Dest |
+|------|----------|------|------|
+| 2026-07-03 | Ribbon zip inject is not enough; Excel Open→Save normalizes OOXML | inbox → library | [excel-com-ribbon.md](library/excel-com-ribbon.md) |
+| 2026-07-03 | Keep COM; do not add xlwings as a second COM wrapper | library | same |
+| 2026-05 | Table.Buffer is second; layout first | library | [power-query.md](library/power-query.md) |
+| 2026-08-20 | Small desk, GitHub library | library | [why-github.md](library/why-github.md) |
