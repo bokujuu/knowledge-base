@@ -5,6 +5,7 @@ tags:
   - ctx
 created: 2026-08-20
 updated: 2026-08-20
+ctx_session: cursor 94d56f6d capture path confirmed
 status: active
 type: reference
 layer: library
@@ -20,7 +21,7 @@ layer: library
 | This repo | What we decided to reuse next time |
 | Agent "memory" MCP | Optional facts; can go stale; not a substitute for git notes |
 
-Search with `ctx search --term "..."` then `ctx show event <id> --window 8`. Distill into a library note. Do not paste the transcript.
+Search with `ctx search --term "..."` then `ctx show event <id> --window 8`. Distill into a library note (cursorsetup skill `capture-external-intelligence`). Do not paste the transcript.
 
 Local install on this machine: `ctx.exe` under `%USERPROFILE%\.local\bin`, data in `%USERPROFILE%\.ctx`. `ctx setup` if the index is empty.
 

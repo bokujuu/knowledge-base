@@ -23,6 +23,7 @@ Start at [desk.md](desk.md).
 - [agent-layers.md](library/agent-layers.md)
 - [hang-prevention.md](library/hang-prevention.md)
 - [ctx-recall.md](library/ctx-recall.md)
+- [github-plugin-mcp.md](library/github-plugin-mcp.md)
 
 ## inbox
 

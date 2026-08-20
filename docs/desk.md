@@ -24,6 +24,7 @@ Read this file. Open at most one library note.
 | Skill vs hook vs AGENTS.md | [library/agent-layers.md](library/agent-layers.md) |
 | Agent hang on Windows | [library/hang-prevention.md](library/hang-prevention.md) |
 | Session history vs this library | [library/ctx-recall.md](library/ctx-recall.md) |
+| Cursor GitHub plugin MCP | [library/github-plugin-mcp.md](library/github-plugin-mcp.md) |
 | Promotion log | [promotion-ledger.md](promotion-ledger.md) |
 
 Do not add Excel COM steps to User Rules. Do not regenerate an existing workbook to add queries.
