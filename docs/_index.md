@@ -24,7 +24,9 @@ Start at [desk.md](desk.md).
 - [hang-prevention.md](library/hang-prevention.md)
 - [ctx-recall.md](library/ctx-recall.md)
 - [github-plugin-mcp.md](library/github-plugin-mcp.md)
+- [cursor-mcp-layout.md](library/cursor-mcp-layout.md)
 
 ## inbox
 
 - [inbox/README.md](inbox/README.md)
+- [task-model-slugs.md](inbox/task-model-slugs.md)
