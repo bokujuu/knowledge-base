@@ -19,4 +19,4 @@ layer: desk
 | 2026-08-20 | Small desk, GitHub library | library | [why-github.md](library/why-github.md) |
 | 2026-08-20 | GitHub plugin PAT blocks OAuth; new chat after auth | inbox → library | [github-plugin-mcp.md](library/github-plugin-mcp.md) |
 | 2026-08-20 | Default MCP is filesystem/memory/Codex 3-way; GitHub is plugin | library | [cursor-mcp-layout.md](library/cursor-mcp-layout.md) |
-| 2026-08-22 | Anima Depth の常用は SN-Copy15 DS 0.8。逆は学習する。推論 -1 は代用しない | case → library | [anima-sn-copy-lora.md](library/anima-sn-copy-lora.md) |
+| 2026-08-22 | Anima の全画面見た目変換は短尺共有ノイズコピー＋DS 0.8。逆は差分の符号を入れ替える | case → library | [anima-sn-copy-lora.md](library/anima-sn-copy-lora.md) |
