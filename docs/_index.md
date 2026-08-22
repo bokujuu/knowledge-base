@@ -3,7 +3,7 @@ title: Knowledge index
 tags:
   - index
 created: 2026-08-20
-updated: 2026-08-20
+updated: 2026-08-22
 status: active
 type: index
 layer: desk
@@ -25,6 +25,7 @@ Start at [desk.md](desk.md).
 - [ctx-recall.md](library/ctx-recall.md)
 - [github-plugin-mcp.md](library/github-plugin-mcp.md)
 - [cursor-mcp-layout.md](library/cursor-mcp-layout.md)
+- [anima-sn-copy-lora.md](library/anima-sn-copy-lora.md)
 
 ## inbox
 
