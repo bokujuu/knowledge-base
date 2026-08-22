@@ -3,7 +3,7 @@ title: Desk
 tags:
   - index
 created: 2026-08-20
-updated: 2026-08-20
+updated: 2026-08-22
 status: active
 type: index
 layer: desk
@@ -26,6 +26,7 @@ Read this file. Open at most one library note.
 | Session history vs this library | [library/ctx-recall.md](library/ctx-recall.md) |
 | Cursor GitHub plugin MCP | [library/github-plugin-mcp.md](library/github-plugin-mcp.md) |
 | What belongs in mcp.json | [library/cursor-mcp-layout.md](library/cursor-mcp-layout.md) |
+| Anima Depth / 画風 LoRA | [library/anima-sn-copy-lora.md](library/anima-sn-copy-lora.md) |
 | Grok vs Composer | cursorsetup `docs/model-routing.md` |
 | Promotion log | [promotion-ledger.md](promotion-ledger.md) |
 
